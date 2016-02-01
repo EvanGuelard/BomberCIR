@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>BomberCIR</title>
+        <link rel="SHORTCUT ICON" href="Niveau1/images/bombe.png"/>
+		
+		<link href='http://fonts.googleapis.com/css?family=Quicksand:400,700|Montserrat:400,700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/css.css"/>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script>
+		$(document).ready(function() {
+			$('.scrollTo').click( function() { // Au clic sur un élément
+				var page = $(this).attr('href'); // Page cible
+				var speed = 750; // Durée de l'animation (en ms)
+				$('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+				return false;
+			});
+			
+			var heightdoc = $(window).height();
+			$('.container').css( "min-height",heightdoc);
+		});
+		</script>
+        <!-- Piwik -->
+        <script type="text/javascript">
+          var _paq = _paq || [];
+          _paq.push(['trackPageView']);
+          _paq.push(['enableLinkTracking']);
+          (function() {
+            var u="//analytics.trancendances.fr/piwik/";
+            _paq.push(['setTrackerUrl', u+'piwik.php']);
+            _paq.push(['setSiteId', 5]);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+          })();
+        </script>
+        <noscript><p><img src="//analytics.trancendances.fr/piwik/piwik.php?idsite=5" style="border:0;" alt="" /></p></noscript>
+        <!-- End Piwik Code -->
+    </head>    
+    <body id="body">
+		<div class="container">
+			<img id="logo" src="img/logo.png"/>
+			<div id="jouer"><a href="Niveau1/index.html"></a></div>
+			<div id="sections">
+				<a class="scrollTo" href="#projet"><img src="img/leprojet.png"/></a>
+				<a class="scrollTo" href="#commentjouer"><img src="img/commentjouer.png"/></a>
+				<a class="scrollTo" href="#niveau"><img src="img/creerniveau.png"/></a>
+			</div>
+		</div>
+		<div id="projet" class="container">
+        <a href="#body" class="scrollTo"><img src="img/leprojettitre.png"/></a>
+			<div class="details">
+				<p>Nous sommes <span>5 étudiants</span> en deuxième année de <span>Cycle informatique et Réseaux</span> à l'ISEN Brest.<br><br>
+				Pendant une semaine, nous avons développé ce site, ce jeu, ainsi qu'un logiciel<br>permettant
+				d'en configurer certains paramètres avant une partie.<br><br>
+				Le but de ce projet est de vous montrer une partie des connaissances que nous avons acquises,<br>
+				et que vous pourrez acquérir si vous choisissez cette formation.<br><br>
+				</p>
+			</div>
+			<div class="details red">
+				<p>Technologies utilisées pour ce projet:<br><span>Phaser</span>
+				 <span>HTML</span> <span>CSS</span> <span>JavaScript</span> <span>jQuery</span> <span>JAVA</span></p>
+			</div>
+			<div class="details little">
+            <p>L'équipe: <a href="evanguelard.fr" target="_blank">Evan Guélard</a>, <a href="http://josephcaillet.fr/" target="_blank">Joseph Caillet</a>, Yohann Vinez, <a href="http://delemottedavid.fr/" target="_blank">David Delemotte</a>, <a href="http://www.brendanabolivier.com/" target="_blank">Brendan Abolivier</a></p>
+				<br><br><br><br>
+			</div>
+		</div>
+		<div id="commentjouer" class="container">
+        <a href="#body" class="scrollTo"><img src="img/reglestitre.png"/></a>
+			<img id="regles" src="img/regles.png"/>
+		</div>
+		<div id="niveau" class="container">
+        <a href="#body" class="scrollTo"><img src="img/persojeu.png"/></a>
+			<div class="details">
+				<p>En <a href="BomberCIR.zip" download="BomberCIR.zip">téléchargeant le projet</a>, vous pouvez ouvrir le logiciel permettant de modifier certains paramètres<br>du jeu avant de jouer, ou modifier directement ces paramètres dans le fichier variables.js qui se trouve dans le dossier assets.</p>
+				<img id="tiled" src="img/editor.png"/>
+			</div>
+			<div class="details red">
+				<p>Même sans connaissances en programmation, vous pouvez ajouter de nouveaux niveaux
+				<br>avec le <span><a target="_blank" href="http://www.mapeditor.org/">logiciel Tiled</a></span>, ou tout simplement <span><a href="BomberCIR.zip" download="BomberCIR.zip">téléchargez le projet</a></span>.</p>
+			</div>
+			<img id="tiled" src="img/tiled.png"/>
+			<p></p>
+			<img src="img/isencti.png"/>
+		</div>
+	</body>
+</html>

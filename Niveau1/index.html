@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>BomberCIR - Niveau 1</title>
+	<link rel="SHORTCUT ICON" href="images/bombe.png"/>
+	<script src="../assets/variables.js"></script>
+	<script src="phaser.min.js"></script>
+	<script src="Boot.js"></script>
+	<script src="Preloader.js"></script>
+	<script src="MainMenu.js"></script>
+	<script src="Game.js"></script>
+    <style>body{margin: 0; background: #fff;}</style>
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//analytics.trancendances.fr/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 5]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//analytics.trancendances.fr/piwik/piwik.php?idsite=5" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+
+</head>
+<body>
+
+<div id="gameContainer"></div>
+
+<script type="text/javascript">
+
+window.onload = function() {
+
+	//	Create your Phaser game and inject it into the gameContainer div.
+	//	We did it in a window.onload event, but you can do it anywhere (requireJS load, anonymous function, jQuery dom ready, - whatever floats your boat)
+	var game = new Phaser.Game(1280, 768, Phaser.AUTO, 'gameContainer');
+
+	//	Add the States your game has.
+	//	You don't have to do this in the html, it could be done in your Boot state too, but for simplicity I'll keep it here.
+	game.state.add('Boot', BasicGame.Boot);
+	game.state.add('Preloader', BasicGame.Preloader);
+	game.state.add('MainMenu', BasicGame.MainMenu);
+	game.state.add('Game', BasicGame.Game);
+
+	//	Now start the Boot state.
+	game.state.start('Boot');
+
+};
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="120" height="12" tilewidth="64" tileheight="64" nextobjectid="1">
+ <tileset firstgid="1" name="platforms" tilewidth="64" tileheight="64">
+  <image source="../tiles/platforms.png" width="640" height="384"/>
+ </tileset>
+ <tileset firstgid="61" name="gem" tilewidth="64" tileheight="64">
+  <image source="../tiles/gem.png" width="64" height="64"/>
+ </tileset>
+ <layer name="Tile Layer 1" width="120" height="12">
+  <data encoding="base64" compression="zlib">
+   eJztzjEKgDAQRNE1EBvT6v2Pmr1AIM0i6HvwuykmAgAA4J+ubLx9gjJ39mzsjqxlvfYOAAunPt0EGDMDGw==
+  </data>
+ </layer>
+</map>

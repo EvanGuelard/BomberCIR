@@ -1,0 +1,153 @@
+@font-face {
+  font-family: 'Bomberman';
+  src: url('Bomberman.ttf');
+}
+
+*, body {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	text-align: center;
+	min-height: 100%;
+}
+
+#logo {
+	position: relative;
+	left: -2px;
+	display: block;
+	margin: auto;
+	margin-bottom: 75px;
+}
+
+#jouer {
+	display: inline-block;
+	height: 250px;
+	width: 250px;
+	margin-right: 50px;
+	cursor: pointer;
+	background: url('../img/jouer.png');
+}
+
+#jouer:hover {
+	background: url('../img/jouerhover.png');
+}
+
+#jouer a {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+#sections {
+	display: inline-block;
+	width: 300px;
+	height: 250px;
+	font-family: Bomberman, arial;
+	font-size: 2.5em;
+}
+
+#sections img {
+	display: block;
+	cursor: pointer;
+}
+
+#bravo, #realisator {
+	display: block;
+	margin: auto;
+}
+
+#realisator {
+	width: 564px;
+	height: 282px;
+	cursor: pointer;
+	background: url('../img/realisator.png');
+	-webkit-transition: all 0.25s; /* Safari */
+    transition: all 0.25s;
+}
+
+#realisator:hover {
+	background: url('../img/realisatorhover.png');
+	-webkit-transition: all 0.25s; /* Safari */
+    transition: all 0.25s;
+}
+
+#realisator a {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+#regles {
+	display: block;
+	margin: auto;
+}
+
+.scrollTo img:hover {
+	opacity: 0.75;
+}
+
+.details {
+	font-family: raleway;
+	font-weight: 300;
+	font-size: 1.3em;
+	color: #000000;
+	margin-top: 50px;
+}
+
+.details span {
+	font-weight: 400;
+	font-size: 1em;
+	background-color: #dd112a;
+	padding: 2px 8px 2px 8px;
+	color: #ffffff;
+}
+
+.red {
+	background-color: #dd112a;
+	color: #ffffff;
+	height: 100px;
+	margin-top: 30px !important;
+}
+
+.red p {
+	position: relative;
+	top: 22px;
+}
+
+.red span {
+	background: none;
+	font-weight: 500;
+}
+
+.details span a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.details span a:hover {
+	text-decoration: underline;
+}
+
+.little {
+	margin-top: 35px !important;
+	font-weight: 500;
+}
+
+.little p {
+	font-weight: 500;
+}
+
+#tiled {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+a {
+    color: inherit;
+}
+
+a:hover {
+    color: #dd112a;
+}
